@@ -1,3 +1,6 @@
+console.log("ENV KEYS:");
+console.log(Object.keys(process.env));
+
 console.log("TOKEN =", process.env.TOKEN);
 const TelegramBot = require("node-telegram-bot-api");
 const cron = require("node-cron");
