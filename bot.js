@@ -16,6 +16,10 @@ const bot = new TelegramBot(process.env.TOKEN, {
   polling: true
 });
 
+bot.getWebHookInfo().then(info => {
+  console.log("WEBHOOK INFO =", JSON.stringify(info, null, 2));
+});
+
 bot.getMe()
   .then((me) => {
     console.log("BOT CONNECTÉ :", me.username);
