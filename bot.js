@@ -1,7 +1,3 @@
-console.log("TOKEN PRESENT =", "TOKEN" in process.env);
-console.log("TOKEN VALUE =", process.env.TOKEN);
-
-process.exit(0);
 const TelegramBot = require("node-telegram-bot-api");
 const cron = require("node-cron");
 const fs = require("fs");
